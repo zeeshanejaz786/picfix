@@ -1,0 +1,164 @@
+/* PicFix Admin Styles */
+
+.picfix-wrap .picfix-intro {
+    font-size: 1.2em;
+    color: #50575e;
+}
+
+.picfix-wrap .nav-tab .dashicons {
+    margin-right: 5px;
+}
+
+.picfix-wrap .picfix-tab-pane {
+    display: none;
+    margin-top: 1em;
+}
+
+.picfix-wrap .picfix-tab-pane.active {
+    display: block;
+}
+
+.picfix-tool-header {
+    background: #fff;
+    padding: 1px 20px 10px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.picfix-tool-header h2 {
+    font-size: 1.5em;
+}
+.picfix-tool-header .dashicons {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.picfix-wrap .button-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.picfix-results-container {
+    margin-top: 20px;
+    position: relative;
+    min-height: 150px;
+}
+
+.picfix-loader {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 10;
+    border-radius: 4px;
+}
+.picfix-loader-content {
+    text-align: center;
+}
+.picfix-loader .spinner {
+    float: none;
+}
+.picfix-loader p {
+    font-size: 1.1em;
+    color: #50575e;
+    margin-top: 10px;
+}
+
+/* Card Grid Layout */
+.picfix-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.picfix-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.picfix-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.picfix-card-thumb {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f0f0f1;
+    border-bottom: 1px solid #ccd0d4;
+    border-radius: 4px 4px 0 0;
+}
+.picfix-card-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.picfix-card-info {
+    padding: 10px 15px;
+    flex-grow: 1;
+    word-break: break-all;
+}
+.picfix-card-info a,
+.picfix-card-info strong {
+    font-size: 13px;
+    display: block;
+}
+.picfix-card-info small {
+    font-size: 11px;
+    color: #666;
+    display: block;
+    margin-top: 4px;
+}
+
+.picfix-card-actions {
+    padding: 10px 15px;
+    background: #fcfcfc;
+    border-top: 1px solid #ccd0d4;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30px;
+}
+.picfix-card-actions .spinner {
+    visibility: hidden;
+}
+.picfix-card-actions .spinner.is-active {
+    visibility: visible;
+}
+
+.picfix-status {
+    font-size: 12px;
+    text-align: right;
+}
+.picfix-status .dashicons {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.picfix-status.error {
+    color: #d63638;
+}
+.picfix-card.converted {
+    border-color: #00a32a;
+}
+.picfix-card.converted .picfix-status {
+    color: #00a32a;
+}
+
+.picfix-duplicate-group {
+    margin-bottom: 20px;
+}
+.picfix-duplicate-group .inside {
+    padding: 0 12px 12px;
+    margin: 0;
+}
